@@ -2,7 +2,7 @@
 //permite estar pendiente de las subscripciones en el lapso del tiempo
 
 import { fromEvent } from "rxjs";
-import { map, sampleTime } from "rxjs/operators";
+import { map, sampleTime, tap } from "rxjs/operators";
 
 const click$=fromEvent<MouseEvent>(document,'click');
 

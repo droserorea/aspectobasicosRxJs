@@ -1,6 +1,6 @@
 //emite unicamente el valor dentro del tiempo establecido
 //aquellos valores que se envien para emitir antes del tiempo son ignorados
-//emite el valor primero y pues espera el tiempo definido para el siguiente
+//emite el valor primero y después espera el tiempo definido para el siguiente
 import { asyncScheduler, fromEvent } from "rxjs";
 import { distinctUntilChanged, map, pluck, throttleTime } from "rxjs/operators";
 
